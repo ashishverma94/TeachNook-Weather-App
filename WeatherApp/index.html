@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="https://kit.fontawesome.com/919483e126.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="forecast">
+            <img src="images/weather-icon.png" alt="img-icon" height="80px" width="200px"/>
+
+        </div>
+        <div class="header">
+            <input type="text" class = "searchBar" placeholder="Enter city and click search icon --->" />
+            <button class = "btn" onclick = 'getCityInput()'>
+            <i id = "buttonSearch" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+       
+    </div>
+
+    <div class="container">
+        <div class="left glass">
+            <div class="citydate">
+                <h1 class = 'city_name'>City</h1>
+                <h3 class = 'date' >23 March, 2023</h3>
+            </div>
+
+            <div class="box-outer">
+                <div class="box-inner1">
+                    <h3>Temperature</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1684/1684375.png" height="40px" width="40px" />
+                    <h3><span class = "c_temp">45</span>&deg;C</h3>
+
+                </div>
+                <div class="box-inner2">
+                    <h3>Humidity</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/10271/10271190.png" height="40px" width="40px" />
+                    <h3><span class = "c_humidity">45</span>%</h3>
+
+
+                </div>
+
+                <div class="box-inner3">
+                    <h3> &#160 &#160 Wind &#160 &#160</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3579/3579552.png" height="40px" width="40px" />
+                    <h3><span class = "c_wind">47</span> km/h</h3>
+
+
+                </div>
+                <div class="box-inner4">
+                    <h3>&#160 &#160Condition &#160 </h3>
+                    <img class = "c_img" src="https://cdn-icons-png.flaticon.com/512/10213/10213412.png" height="40px" width="40px" />
+                    <h3 ><span class = "c_cond">Sunny</span></h3>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right ">
+
+            <div class="one glass">
+                <div class="day-month">
+                    <img class = "one_day_pic" src="https://cdn-icons-png.flaticon.com/512/8586/8586878.png" height=60px width=60px />
+                </div>
+                <hr>
+                <div class="inner-condition">
+                    <h2 class = "one_condition">Sunny</h2>
+                    <img class = "one_condition_pic" src="https://cdn-icons-png.flaticon.com/512/1959/1959304.png" height=70px width=70px/>
+                </div>
+                <div class = "in-temp-humidity">
+                    <p >
+                        Avg Temp :<span class = "one_temp" >20</span>&deg
+                        <br>
+                        Humidity:<span class = "one_humidity">20</span>%
+                    </p>
+                </div>
+            </div>
+
+            <div class="one glass">
+                <div class="day-month">
+                    <img class = "two_day_pic" src="https://cdn-icons-png.flaticon.com/512/8586/8586878.png" height=60px width=60px />
+                </div>
+                <hr>
+                <div class="inner-condition">
+                    <h2 class = "two_condition">Sunny</h2>
+                    <img class = "two_condition_pic" src="https://cdn-icons-png.flaticon.com/512/1959/1959304.png" height=70px width=70px/>
+                </div>
+                <div class = "in-temp-humidity">
+                    <p >
+                        Avg Temp :<span class = "two_temp" >20</span>&deg
+                        <br>
+                        Humidity:<span class = "two_humidity">20</span>%
+                    </p>
+                </div>
+            </div>
+
+            <div class="one glass">
+                <div class="day-month">
+                    <img class = "three_day_pic" src="https://cdn-icons-png.flaticon.com/512/8586/8586878.png" height=60px width=60px />
+                </div>
+                <hr>
+                <div class="inner-condition">
+                    <h2 class = "three_condition">Sunny</h2>
+                    <img class = "three_condition_pic" src="https://cdn-icons-png.flaticon.com/512/1959/1959304.png" height=70px width=70px/>
+                </div>
+                <div class = "in-temp-humidity">
+                    <p >
+                        Avg Temp :<span class = "three_temp" >20</span>&deg
+                        <br>
+                        Humidity:<span class = "three_humidity">20</span>%
+                    </p>
+                </div>
+            </div>
+
+            <div class="one glass">
+                <div class="day-month">
+                    <img class = "four_day_pic" src="https://cdn-icons-png.flaticon.com/512/8586/8586878.png" height=60px width=60px />
+                </div>
+                <hr>
+                <div class="inner-condition">
+                    <h2 class = "four_condition">Sunny</h2>
+                    <img class = "four_condition_pic" src="https://cdn-icons-png.flaticon.com/512/1959/1959304.png" height=70px width=70px/>
+                </div>
+                <div class = "in-temp-humidity">
+                    <p >
+                        Avg Temp :<span class = "four_temp" >20</span>&deg
+                        <br>
+                        Humidity:<span class = "four_humidity">20</span>%
+                    </p>
+                </div>
+            </div>
+
+            <div class="one glass">
+                <div class="day-month">
+                    <img class = "five_day_pic" src="https://cdn-icons-png.flaticon.com/512/8586/8586878.png" height=60px width=60px />
+                </div>
+                <hr>
+                <div class="inner-condition">
+                    <h2 class = "five_condition">Sunny</h2>
+                    <img class = "five_condition_pic" src="https://cdn-icons-png.flaticon.com/512/1959/1959304.png" height=70px width=70px/>
+                </div>
+                <div class = "in-temp-humidity">
+                    <p >
+                        Avg Temp :<span class = "five_temp" >20</span>&deg
+                        <br>
+                        Humidity:<span class = "five_humidity">20</span>%
+                    </p>
+                </div>
+            </div>
+
+            <div class="one glass">
+                <div class="day-month">
+                    <img class = "six_day_pic" src="https://cdn-icons-png.flaticon.com/512/8586/8586878.png" height=60px width=60px />
+                </div>
+                <hr>
+                <div class="inner-condition">
+                    <h2 class = "six_condition">Sunny</h2>
+                    <img class = "six_condition_pic" src="https://cdn-icons-png.flaticon.com/512/1959/1959304.png" height=70px width=70px/>
+                </div>
+                <div class = "in-temp-humidity">
+                    <p >
+                        Avg Temp :<span class = "six_temp" >20</span>&deg
+                        <br>
+                        Humidity:<span class = "six_humidity">20</span>%
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class = " foot ">
+            <h4>hello world</h4>
+        </footer>
+    </div>
+
+    <script >
+
+        const img_days = [
+            img_sun = 'https://cdn-icons-png.flaticon.com/512/8586/8586915.png',
+            img_mon = 'https://cdn-icons-png.flaticon.com/512/8586/8586878.png',
+            img_tue = 'https://cdn-icons-png.flaticon.com/512/8586/8586884.png',
+            img_wed = 'https://cdn-icons-png.flaticon.com/512/8586/8586889.png',
+            img_thu = 'https://cdn-icons-png.flaticon.com/512/8586/8586894.png',
+            img_fri = 'https://cdn-icons-png.flaticon.com/512/8586/8586901.png',
+            img_sat = 'https://cdn-icons-png.flaticon.com/512/8586/8586908.png'
+        ]
+
+        const cond_images = [
+            sunny = 'https://cdn-icons-png.flaticon.com/512/1959/1959304.png',
+            rainy = 'https://cdn-icons-png.flaticon.com/512/1146/1146860.png',
+            clear = 'https://cdn-icons-png.flaticon.com/512/4725/4725017.png',
+            cold = 'https://cdn-icons-png.flaticon.com/512/2077/2077008.png'
+        ]
+
+        function verifyWeather( props ){
+            if ( props == "mist" || props == "snow" )
+                return [cond_images[3],"Cold" ] ;
+            else if ( props == "shower rain" || props == "rain" || props == "thunderstorm")
+                return [cond_images[1],"Rainy" ] ;
+            else if ( props == "scattered clouds" || props == "broken clouds" )
+                return [cond_images[2],"Clear" ] ;
+            else 
+                return [cond_images[0],"Sunny" ] ;
+        }
+
+        const monthName = [ 'Jan',
+                            'Feb',
+                            'March',
+                            'April',
+                            'May',
+                            'June',
+                            'July',
+                            'August',
+                            'Sep',
+                            'Oct',
+                            'Nov',
+                            'Dec']
+
+        let loc = 'Delhi' ;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${loc}&appid=18316112d02b22f6aa779068f7ac0246`
+
+        async function checkWeather(){
+            const response = await fetch(apiUrl);
+            var data = await response.json() ;
+
+            const d = new Date() ;
+            var day = d.getDay() ;
+            var date = d.getDate() ;
+            var month = d.getMonth() ;
+            var year = d.getFullYear() ;
+         
+            
+            var cityName = data.city.name ;
+            var fullDate = date+" "+monthName[month]+ ", " + year ;
+        
+            document.querySelector('.date').innerHTML = fullDate ;
+
+            //___________________________ Day 1 ____________________________
+            var condition_day_1 = data.list[5].weather[0].description ;
+            var temp_day_1 = (data.list[5].main.temp -265.15).toFixed(2) ;
+            var humidity_day_1 = data.list[5].main.humidity ;
+            const cond_data_img_1 = verifyWeather(condition_day_1) ;
+            
+            document.querySelector('.one_condition').innerHTML = cond_data_img_1[1] ;//
+            document.querySelector('.one_temp').innerHTML = temp_day_1 ;
+            document.querySelector('.one_humidity').innerHTML = humidity_day_1 ;
+            document.querySelector('.one_day_pic').src = img_days[(day+1+7)%7] ;
+            document.querySelector('.one_condition_pic').src = cond_data_img_1[0] ;
+
+            //___________________________ Day 2 ____________________________
+            var condition_day_2 = data.list[11].weather[0].description ;
+            var temp_day_2 = (data.list[11].main.temp -265.15).toFixed(2) ;
+            var humidity_day_2 = data.list[11].main.humidity ;
+            const cond_data_img_2 = verifyWeather(condition_day_2) ;
+            
+            document.querySelector('.two_condition').innerHTML = cond_data_img_2[1] ;//
+            document.querySelector('.two_temp').innerHTML = temp_day_2 ;
+            document.querySelector('.two_humidity').innerHTML = humidity_day_2 ;
+            document.querySelector('.two_day_pic').src = img_days[(day+2+7)%7] ;
+            document.querySelector('.two_condition_pic').src = cond_data_img_2[0] ;
+
+            //___________________________ Day 3 ____________________________
+            var condition_day_3 = data.list[16].weather[0].description ;
+            var temp_day_3 = (data.list[16].main.temp -265.15).toFixed(2) ;
+            var humidity_day_3 = data.list[16].main.humidity ;
+            const cond_data_img_3 = verifyWeather(condition_day_3) ;
+            
+            document.querySelector('.three_condition').innerHTML = cond_data_img_3[1] ;//
+            document.querySelector('.three_temp').innerHTML = temp_day_3 ;
+            document.querySelector('.three_humidity').innerHTML = humidity_day_3 ;
+            document.querySelector('.three_day_pic').src = img_days[(day+3+7)%7] ;
+            document.querySelector('.three_condition_pic').src = cond_data_img_3[0] ;
+
+            //___________________________ Day 4 ____________________________
+            var condition_day_4 = data.list[21].weather[0].description ;
+            var temp_day_4 = (data.list[21].main.temp -265.15).toFixed(2) ;
+            var humidity_day_4 = data.list[21].main.humidity ;
+            const cond_data_img_4 = verifyWeather(condition_day_4) ;
+            
+            document.querySelector('.four_condition').innerHTML = cond_data_img_4[1] ;//
+            document.querySelector('.four_temp').innerHTML = temp_day_4 ;
+            document.querySelector('.four_humidity').innerHTML = humidity_day_4 ;
+            document.querySelector('.four_day_pic').src = img_days[(day+4+7)%7] ;
+            document.querySelector('.four_condition_pic').src = cond_data_img_4[0] ;
+
+            //___________________________ Day 5 ____________________________
+            var condition_day_5 = data.list[28].weather[0].description ;
+            var temp_day_5 = (data.list[28].main.temp -265.15).toFixed(2) ;
+            var humidity_day_5 = data.list[28].main.humidity ;
+            const cond_data_img_5 = verifyWeather(condition_day_5) ;
+            
+            document.querySelector('.five_condition').innerHTML = cond_data_img_5[1] ;//
+            document.querySelector('.five_temp').innerHTML = temp_day_5 ;
+            document.querySelector('.five_humidity').innerHTML = humidity_day_5 ;
+            document.querySelector('.five_day_pic').src = img_days[(day+5+7)%7] ;
+            document.querySelector('.five_condition_pic').src = cond_data_img_5[0] ;
+
+            //___________________________ Day 6 ____________________________
+
+            var condition_day_6 = data.list[36].weather[0].description ;
+            var temp_day_6 = (data.list[36].main.temp -265.15).toFixed(2) ;
+            var humidity_day_6 = data.list[36].main.humidity ;
+            const cond_data_img_6 = verifyWeather(condition_day_6) ;
+            
+            document.querySelector('.six_condition').innerHTML = cond_data_img_6[1] ;//
+            document.querySelector('.six_temp').innerHTML = temp_day_6 ;
+            document.querySelector('.six_humidity').innerHTML = humidity_day_6 ;
+            document.querySelector('.six_day_pic').src = img_days[(day+6+7)%7] ;
+            document.querySelector('.six_condition_pic').src = cond_data_img_6[0] ;
+        }
+
+        checkWeather() ;
+            
+        //_____________________________ Current ______________________
+        async function checkCurrWeather(city){
+            const currApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=18316112d02b22f6aa779068f7ac0246`
+            const response = await fetch(currApiUrl);
+            var data = await response.json() ;
+
+            var curr_temp = data.main.temp ;
+            var curr_humidity = data.main.humidity;
+            var curr_wind = data.wind.speed ;
+            var curr_cond = data.weather[0].description ;
+            const curr_condd = verifyWeather(curr_cond) ;
+
+            document.querySelector('.c_temp').innerHTML = (curr_temp-273.15).toFixed(2) ;
+            document.querySelector('.c_humidity').innerHTML = curr_humidity ;
+            document.querySelector('.c_wind').innerHTML = curr_wind ;
+            document.querySelector('.c_cond').innerHTML = curr_condd[1] ;
+            document.querySelector('.c_img').src = curr_condd[0] ;
+            document.querySelector('.city_name').innerHTML = data.name ;
+        }
+
+        const buttn = document.querySelector('botton') ;
+
+        function getCityInput(){
+            var myinput = document.querySelector('input').value ;
+            var cityName = myinput ;
+            checkCurrWeather(cityName) ;
+        }
+
+        //__________________________ Live Location _____________________
+        
+        var latitude = 28.644800 ;  // Delhi
+        var longitude = 77.216721 ;
+
+        async function check_ll_weather([latitude,longitude]){
+            
+            const currApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=18316112d02b22f6aa779068f7ac0246` ;
+            const response = await fetch(currApiUrl);
+            var data = await response.json() ;
+
+            var curr_temp = data.main.temp ;
+            var curr_humidity = data.main.humidity;
+            var curr_wind = data.wind.speed ;
+            var curr_cond = data.weather[0].description ;
+            const curr_condd = verifyWeather(curr_cond) ;
+
+            document.querySelector('.c_temp').innerHTML = (curr_temp-273.15).toFixed(2) ;
+            document.querySelector('.c_humidity').innerHTML = curr_humidity ;
+            document.querySelector('.c_wind').innerHTML = curr_wind ;
+            document.querySelector('.c_cond').innerHTML = curr_condd[1] ;
+            document.querySelector('.c_img').src = curr_condd[0] ;
+            document.querySelector('.city_name').innerHTML = data.name ;
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition((success)=>{
+                     latitude = success.coords.latitude ;
+                     longitude = success.coords.longitude ;
+                     check_ll_weather([latitude,longitude]) ;
+                });
+            }
+        }
+        getLocation() ;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+:root{
+    --divh: 200px ;
+    --divw: 200px ;
+    --myfont:Comic Sans MS ;
+}
+
+body, html {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp3980225.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.outer{
+    height: 80px;
+    width: 100%;
+    display: flex ;
+    align-items: center;
+}
+
+.forecast{
+    width: 50%;
+    margin-top:20px ;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--myfont);
+}
+
+.forecast > img{
+    margin: 10px 0px 0px 18px;
+}
+
+
+
+.header {
+    width: 50% ;
+    height:55%;
+    float: right;
+    background-color: white;
+    /* margin:0 auto; */
+    margin-left: 300px;
+    margin-right:30px ;
+    border-radius: 50px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+
+}
+
+.header > input{
+    width:80% ;
+    border:2px solid black;
+    padding: 2px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: medium;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+
+
+
+
+.container{
+    width: 100%;
+    height: 120%;
+    color: rgb(13, 1, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left{
+    /* background-color:red; */
+    margin: 26px 20px 20px 20px;
+    padding-bottom: 19px;
+    width: 30%;
+}
+
+.glass{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255,255,255,0.18) ;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.right{
+    /* background-color:red; */
+    width: 70%;
+    display: grid;
+    margin-right:20px ;
+    grid-template-areas: 'one one one'
+                         'one one one';
+}
+
+.one{
+    margin-left: 15px;
+    margin-top: 15px;
+    height:260px;
+}
+
+.citydate{
+    text-align: center;
+    color: rgb(53, 51, 51);
+    font-family: var(--myfont);
+}
+
+.box-outer {
+    height:380px;
+    display:grid;
+    grid-template-areas: 'box-inner1 box-inner2'
+                         'box-inner3 box-inner4';
+}
+
+.box-inner1, .box-inner2, .box-inner3, .box-inner4 {
+    border-radius: 20px;
+    text-align: center;
+    font-family:var(--myfont);
+    color: rgb(51, 48, 50);
+    
+    margin:12px 12px 12px 12px ;
+    box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.3);
+}
+
+.day-month{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-month > img{
+    margin-top: 4px;
+}
+
+button{
+    background:none ;
+    border: none;
+}
+
+.inner-condition{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-condition > img{
+    margin-left: 70px;
+}
+
+.in-temp-humidity{
+    border-radius: 20px;
+    text-align: center;
+    font-family:var(--myfont);
+    color: rgb(51, 48, 50);
+    margin:0px 12px  ;
+    box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.3);
+}
+
+.in-temp-humidity> p{
+    padding:14px;
+    font-weight: bold;
+}
+
+footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(20, 22, 26);
+        color: rgb(234, 228, 228);
+        text-align: center;
+        height: 45px;
+        opacity: 0.7;
+}
+
+@media  (max-width:731px){
+    .forecast{
+        width: 60%;
+    }
+    .header{
+        margin: 0px 20px 0px 30px;
+    }
+    .container{
+        width: 150%;
+        height: 394%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one{
+        width:95% ;
+    }
+    .right{
+       margin-left: 0px;
+        display: grid;
+        grid-template-areas: 'one one'
+                             'one one'
+                             'one one';
+    }
+
+    .left{
+        width: 80%;
+    }
+
+    .day-month > h2{
+        margin-left: 5px;
+        font-family: var(--myfont);
+    }
+
+    .inner-condition{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .inner-condition > img{
+        margin-left: 45px;
+    }
+
+  
+}
+
+@media (min-width:731px) and ( max-width:1200px){
+    .container{
+        height: 390%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+    .left{
+        width:50%;
+    }
+    .right{
+        margin-left: 0px;
+        
+        display: grid;
+        grid-template-areas: 'one one'
+                             'one one'
+                             'one one';
+    }
+}
